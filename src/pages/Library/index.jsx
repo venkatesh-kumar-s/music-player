@@ -15,8 +15,7 @@ const Library = () => {
         setContent(
           response?.data?.items?.filter((playlist) => playlist !== null)
         )
-      )
-      .then(() => console.log("content---", content));
+      );
   }, []);
 
   const playPlaylist = (id) => {

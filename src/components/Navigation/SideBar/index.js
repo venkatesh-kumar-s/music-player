@@ -14,14 +14,11 @@ const SideBar = () => {
     avatar: "",
   });
   useEffect(() => {
-    apiClient.get("me").then(
-      (response) => (
-        console.log(response.data),
-        setUser({
-          name: response?.data?.display_name,
-          avatar: response?.data?.images[0]?.url,
-        })
-      )
+    apiClient.get("me").then((response) =>
+      setUser({
+        name: response?.data?.display_name,
+        avatar: response?.data?.images[0]?.url,
+      })
     );
   }, []);
 
