@@ -1,0 +1,9 @@
+.main-body {
+  display: flex;
+  background-color: #0e5592;
+  width: calc(100vw - 1rem);
+  height: calc(100vh - 1rem);
+  border-radius: 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}

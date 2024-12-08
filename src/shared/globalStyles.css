@@ -1,0 +1,15 @@
+.view-container {
+  background-color: #1b2535;
+  border-radius: 1.5rem;
+  height: 100%;
+  width: calc(100vw - 5rem);
+  overflow: hidden;
+  background-color: #1b2535;
+  opacity: 1;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #1b2535 80px
+    ),
+    repeating-linear-gradient(#1c325655, #1c3256);
+}

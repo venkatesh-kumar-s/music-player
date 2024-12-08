@@ -1,0 +1,58 @@
+.sidebar {
+  width: 5rem;
+  height: 100%;
+  background-color: #0e5592;
+  color: whitesmoke;
+}
+
+.sidebar-container {
+  margin: 1rem 0;
+  height: calc(100% - 2rem);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  object-fit: fill;
+  border-radius: 0.5rem;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-btn-body {
+  text-align: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 0.8rem;
+  color: #5faff4;
+  padding: 0.1rem;
+  background-color: rgb(24, 99, 164, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.nav-btn-body:hover {
+  color: whitesmoke;
+  background-color: rgb(24, 99, 164, 0.89);
+}
+
+.active {
+  color: whitesmoke;
+  background-color: rgb(24, 99, 164, 0.89);
+  transform: scale(1.02);
+}
+
+.nav-btn-title {
+  margin: 0px;
+  font-size: small;
+}
