@@ -1,14 +1,18 @@
 import React from "react";
 import { loginEndpoint } from "../../spotify";
+import "./auth.css";
 
 const Login = () => {
   return (
-    <div>
+    <div className="login-container">
       <img
+        className="brand-logo"
         alt="Music"
-        src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapers.com%2Fmusic-background-png&psig=AOvVaw0MNdjH82-TT1FKEssSBqAc&ust=1733750224826000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKC5hI-hmIoDFQAAAAAdAAAAABAJ"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Spotify_logo_with_text.svg/1024px-Spotify_logo_with_text.svg.png"
       />
-      <a href={loginEndpoint}>LOG IN</a>
+      <a className="auth-link" href={loginEndpoint}>
+        LOG IN
+      </a>
     </div>
   );
 };

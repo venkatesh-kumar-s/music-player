@@ -23,7 +23,6 @@ const Home = () => {
     } else {
       setToken(tokenFormStorage);
     }
-    console.log("token---", window.location.hash?.split("&")[0]?.split("=")[1]);
   }, []);
   return (
     <Router>
