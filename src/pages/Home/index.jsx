@@ -10,6 +10,7 @@ import SideBar from "../../components/Navigation/SideBar";
 // Styles
 import "./home.css";
 import Login from "../Auth";
+import { setClientToken } from "../../spotify";
 
 const Home = () => {
   const [token, setToken] = useState("");
@@ -20,8 +21,10 @@ const Home = () => {
     if (!tokenFormStorage && tokenFromURL) {
       sessionStorage.setItem("token", tokenFromURL);
       setToken(tokenFromURL);
+      setClientToken(tokenFromURL);
     } else {
       setToken(tokenFormStorage);
+      setClientToken(tokenFormStorage);
     }
   }, []);
   return (

@@ -1,0 +1,85 @@
+.library {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.library-body {
+  padding: 3%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.playlist-card {
+  cursor: pointer;
+  position: relative;
+  width: 15%;
+  height: 38%;
+  border-radius: 20px;
+  background-color: rgb(30, 42, 62);
+  border: 1px solid rgba(54, 69, 98, 0.18);
+  padding: 1%;
+  margin: 1%;
+  background: linear-gradient(
+    75deg,
+    rgb(40, 58, 88) 0%,
+    rgba(54, 69, 98, 0) 100%
+  );
+  transition: all 0.15s ease;
+  overflow: hidden;
+}
+
+.playlist-card:hover {
+  transform: scale(1.02);
+  .play-playlist {
+    opacity: 1;
+  }
+}
+
+.playlist-avatar {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 15px;
+}
+
+.playlist-name {
+  width: 100%;
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  color: #bdd3f8;
+  font-size: 16px;
+}
+
+.total-tracks {
+  margin: 0;
+  color: #5776af;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.play-playlist {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  width: 100%;
+  height: 34%;
+  border-radius: 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(54, 69, 98, 0) 10%,
+    rgba(54, 69, 98, 1) 100%
+  );
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 1rem;
+  transition: all 0.2s ease;
+}
+.play-playlist:hover {
+  opacity: 1;
+}
